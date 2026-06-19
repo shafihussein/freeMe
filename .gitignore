@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# lightswind staging (pro + free components — never tracked)
+src/components/lightswind/
