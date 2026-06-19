@@ -14,7 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "freeMe",
+  title: {
+    default: "freeMe",
+    template: "%s | freeMe",
+  },
   description: "freeMe — built with Next.js, Tailwind & Lightswind UI",
 };
 
@@ -28,7 +31,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-background text-foreground">
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>

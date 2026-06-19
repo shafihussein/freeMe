@@ -40,5 +40,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# lightswind staging (pro + free components — never tracked)
+# ui library staging (local copies for reference — regenerate with setup script, never tracked)
 src/components/lightswind/
+src/components/shadcn/
+src/components/mui/
+src/components/react-bits/
