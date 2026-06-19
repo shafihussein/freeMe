@@ -31,6 +31,17 @@
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
 
+  @keyframes meteorFall {
+    from {
+      transform: translateY(-200px) rotate(215deg);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(calc(100vh + 200px)) rotate(215deg);
+      opacity: 0;
+    }
+  }
+
   @keyframes accordion-down {
     from {
       height: 0;
