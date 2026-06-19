@@ -72,11 +72,17 @@ export default function RegisterPage() {
 
       <p className="mt-4 text-center text-xs text-foreground/40">
         By signing up you agree to our{" "}
-        <Link href="#" className="underline hover:text-foreground/70 transition-colors">
+        <Link
+          href="#"
+          className="underline hover:text-foreground/70 transition-colors"
+        >
           Terms
         </Link>{" "}
         and{" "}
-        <Link href="#" className="underline hover:text-foreground/70 transition-colors">
+        <Link
+          href="#"
+          className="underline hover:text-foreground/70 transition-colors"
+        >
           Privacy Policy
         </Link>
         .

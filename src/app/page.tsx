@@ -18,9 +18,24 @@ export default function Home() {
             free<span className="text-primarylw">Me</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm text-foreground/70">
-            <Link href="#features" className="hover:text-foreground transition-colors">Features</Link>
-            <Link href="#how-it-works" className="hover:text-foreground transition-colors">How it works</Link>
-            <Link href="#pricing" className="hover:text-foreground transition-colors">Pricing</Link>
+            <Link
+              href="#features"
+              className="hover:text-foreground transition-colors"
+            >
+              Features
+            </Link>
+            <Link
+              href="#how-it-works"
+              className="hover:text-foreground transition-colors"
+            >
+              How it works
+            </Link>
+            <Link
+              href="#pricing"
+              className="hover:text-foreground transition-colors"
+            >
+              Pricing
+            </Link>
           </nav>
           <div className="flex items-center gap-3">
             <Link
@@ -84,8 +99,12 @@ export default function Home() {
                 { value: "4.9/5", label: "Average rating" },
               ].map((stat) => (
                 <div key={stat.label}>
-                  <p className="text-3xl font-bold text-foreground">{stat.value}</p>
-                  <p className="text-sm text-foreground/50 mt-1">{stat.label}</p>
+                  <p className="text-3xl font-bold text-foreground">
+                    {stat.value}
+                  </p>
+                  <p className="text-sm text-foreground/50 mt-1">
+                    {stat.label}
+                  </p>
                 </div>
               ))}
             </div>
@@ -132,7 +151,9 @@ export default function Home() {
                   <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primarylw/10 mb-6">
                     <feature.icon className="h-6 w-6 text-primarylw" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                  <h3 className="text-xl font-semibold mb-3">
+                    {feature.title}
+                  </h3>
                   <p className="text-foreground/60 leading-relaxed">
                     {feature.description}
                   </p>
@@ -143,7 +164,10 @@ export default function Home() {
         </section>
 
         {/* How it works */}
-        <section id="how-it-works" className="py-24 bg-foreground/[0.02] border-y border-foreground/10">
+        <section
+          id="how-it-works"
+          className="py-24 bg-foreground/[0.02] border-y border-foreground/10"
+        >
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
@@ -175,12 +199,17 @@ export default function Home() {
                     "Start sessions, track progress, and watch your focus compound over time.",
                 },
               ].map((item) => (
-                <div key={item.step} className="flex flex-col items-center text-center">
+                <div
+                  key={item.step}
+                  className="flex flex-col items-center text-center"
+                >
                   <div className="w-16 h-16 rounded-full bg-primarylw/10 border-2 border-primarylw/20 flex items-center justify-center text-primarylw font-bold text-lg mb-6 relative z-10 bg-background">
                     {item.step}
                   </div>
                   <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                  <p className="text-foreground/60 leading-relaxed">{item.description}</p>
+                  <p className="text-foreground/60 leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               ))}
             </div>
@@ -205,12 +234,14 @@ export default function Home() {
                 Create your free account <ArrowRight className="h-4 w-4" />
               </Link>
               <div className="flex items-center gap-5 text-sm text-foreground/50">
-                {["Free forever plan", "No credit card", "Cancel anytime"].map((item) => (
-                  <span key={item} className="flex items-center gap-1.5">
-                    <CheckCircle className="h-3.5 w-3.5 text-primarylw" />
-                    {item}
-                  </span>
-                ))}
+                {["Free forever plan", "No credit card", "Cancel anytime"].map(
+                  (item) => (
+                    <span key={item} className="flex items-center gap-1.5">
+                      <CheckCircle className="h-3.5 w-3.5 text-primarylw" />
+                      {item}
+                    </span>
+                  )
+                )}
               </div>
             </div>
           </div>
@@ -225,10 +256,30 @@ export default function Home() {
               free<span className="text-primarylw">Me</span>
             </Link>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-foreground/50">
-              <Link href="#" className="hover:text-foreground transition-colors">Privacy</Link>
-              <Link href="#" className="hover:text-foreground transition-colors">Terms</Link>
-              <Link href="#" className="hover:text-foreground transition-colors">Contact</Link>
-              <Link href="#" className="hover:text-foreground transition-colors">Blog</Link>
+              <Link
+                href="#"
+                className="hover:text-foreground transition-colors"
+              >
+                Privacy
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-foreground transition-colors"
+              >
+                Terms
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-foreground transition-colors"
+              >
+                Contact
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-foreground transition-colors"
+              >
+                Blog
+              </Link>
             </div>
             <p className="text-sm text-foreground/40">
               &copy; {new Date().getFullYear()} freeMe. All rights reserved.

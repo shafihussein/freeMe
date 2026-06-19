@@ -1,27 +1,27 @@
-'use client'
+"use client";
 
-import React, { useState } from 'react'
-import { useServerInsertedHTML } from 'next/navigation'
-import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
+import React, { useState } from "react";
+import { useServerInsertedHTML } from "next/navigation";
+import { ServerStyleSheet, StyleSheetManager } from "styled-components";
 
 export default function StyledComponentsRegistry({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  const [styleSheet] = useState(() => new ServerStyleSheet())
+  const [styleSheet] = useState(() => new ServerStyleSheet());
 
   useServerInsertedHTML(() => {
-    const styles = styleSheet.getStyleElement()
-    styleSheet.instance.clearTag()
-    return <>{styles}</>
-  })
+    const styles = styleSheet.getStyleElement();
+    styleSheet.instance.clearTag();
+    return <>{styles}</>;
+  });
 
-  if (typeof window !== 'undefined') return <>{children}</>
+  if (typeof window !== "undefined") return <>{children}</>;
 
   return (
     <StyleSheetManager sheet={styleSheet.instance}>
       {children as React.ReactElement}
     </StyleSheetManager>
-  )
+  );
 }

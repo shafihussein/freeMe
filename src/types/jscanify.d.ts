@@ -1,8 +1,5 @@
 declare module "jscanify" {
-  type ScanInput =
-    | HTMLImageElement
-    | HTMLCanvasElement
-    | HTMLVideoElement;
+  type ScanInput = HTMLImageElement | HTMLCanvasElement | HTMLVideoElement;
 
   interface Point {
     x: number;

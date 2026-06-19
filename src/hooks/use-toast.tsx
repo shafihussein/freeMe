@@ -2,7 +2,12 @@
 
 import { toast as sonnerToast } from "sonner";
 
-export type ToastType = "default" | "destructive" | "success" | "warning" | "info";
+export type ToastType =
+  | "default"
+  | "destructive"
+  | "success"
+  | "warning"
+  | "info";
 
 export interface ToastOptions {
   title?: string;

@@ -1,0 +1,10 @@
+node_modules
+.next
+dist
+build
+
+# ui library staging (gitignored, never format generated code)
+src/components/lightswind
+src/components/shadcn
+src/components/mui
+src/components/react-bits

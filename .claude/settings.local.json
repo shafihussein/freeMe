@@ -26,7 +26,9 @@
       "WebFetch(domain:lucide.dev)",
       "WebFetch(domain:colonelparrot.github.io)",
       "WebFetch(domain:www.npmjs.com)",
-      "WebFetch(domain:docs.opencv.org)"
+      "WebFetch(domain:docs.opencv.org)",
+      "Bash(node *)",
+      "Bash(npm run *)"
     ]
   }
 }
