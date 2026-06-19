@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/career/coursera/projects/freeMe status)",
+      "Bash(git -C /Users/career/coursera/projects/freeMe remote -v)",
+      "Bash(gh auth *)",
+      "Bash(cp /Users/career/coursera/projects/freeMe/node_modules/lightswind/src/components/ui/*.tsx /Users/career/coursera/projects/freeMe/src/components/lightswind/free-components/ui/)",
+      "Bash(cp /Users/career/coursera/projects/freeMe/node_modules/lightswind/src/components/hooks/*.tsx /Users/career/coursera/projects/freeMe/src/components/lightswind/free-components/hooks/)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(gh api *)",
+      "Bash(git -C /Users/career/coursera/projects/freeMe checkout -b chore/setup-gitignore-github-structure)",
+      "Bash(git -C /Users/career/coursera/projects/freeMe add .gitignore src/app/favicon.ico src/components/staged_components/.gitkeep .claude/ .github/ src/components/ui/)"
+    ]
+  }
+}
